@@ -1,18 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
 import Ejemplo4 from './hooks/ejemplo4';
 import TaskListComponent from './components/container/task_list.jsx'
 import GreetingStyled from './components/pure/greetingStyled';
 import Clock from './hooks/lifecycle/Clock';
 import AllCycles from './hooks/lifecycle/AllCycles';
+import Father from './components/container/father';
+import ListContact from './components/container/list_contact';
 
 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         {/* <MiComponenteConContexto /> */}
         {/* <Ejemplo4 nombre='Julio'>
           todo lo que hay aqui, es tratado como props.children
@@ -20,9 +19,11 @@ function App() {
         </Ejemplo4> */}
         {/* <TaskListComponent /> */}
         {/* <GreetingStyled name='Julio'/> */}
-        <Clock />
+        {/* <Clock /> */}
         {/* <AllCycles /> */}
-      </header>
+        {/* Gestion de eventos */}
+        {/* <Father /> */}
+        <ListContact />
     </div>
   );
 }
