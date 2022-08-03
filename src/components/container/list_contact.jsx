@@ -39,9 +39,9 @@ const ListContact = () => {
       const changeConnected = data.map((contact) => {
         if(contact.id === id){
           contact.connected = !contact.connected
-          // return console.log(contact.connected)
         }
-          return contact
+        
+        return contact
 
       })
       return setData(changeConnected)

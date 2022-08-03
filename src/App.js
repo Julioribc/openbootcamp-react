@@ -6,6 +6,8 @@ import Clock from './hooks/lifecycle/Clock';
 import AllCycles from './hooks/lifecycle/AllCycles';
 import Father from './components/container/father';
 import ListContact from './components/container/list_contact';
+import OptionalRender from './components/pure/optionalRender';
+import Cuadrado from './components/container/Cuadrado';
 
 
 
@@ -23,7 +25,12 @@ function App() {
         {/* <AllCycles /> */}
         {/* Gestion de eventos */}
         {/* <Father /> */}
-        <ListContact />
+        {/* <ListContact /> */}
+
+        {/* EJjemplos de Renderizado condicional */}
+        {/* <OptionalRender /> */}
+        <Cuadrado />
+
     </div>
   );
 }
