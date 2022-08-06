@@ -8,6 +8,8 @@ import Father from './components/container/father';
 import ListContact from './components/container/list_contact';
 import OptionalRender from './components/pure/optionalRender';
 import Cuadrado from './components/container/Cuadrado';
+import LoginFormik from './components/pure/forms/LoginFormik';
+import RegisterFormik from './components/pure/forms/RegisterFormik';
 
 
 
@@ -19,7 +21,7 @@ function App() {
           todo lo que hay aqui, es tratado como props.children
           <h3>Contenido del props.children</h3>
         </Ejemplo4> */}
-        {/* <TaskListComponent /> */}
+        <TaskListComponent />
         {/* <GreetingStyled name='Julio'/> */}
         {/* <Clock /> */}
         {/* <AllCycles /> */}
@@ -29,8 +31,11 @@ function App() {
 
         {/* EJjemplos de Renderizado condicional */}
         {/* <OptionalRender /> */}
-        <Cuadrado />
+        {/* <Cuadrado /> */}
 
+        {/* Ejemplos de uso de Formik y Yup */}
+        {/* <LoginFormik /> */}
+        {/* <RegisterFormik /> */}
     </div>
   );
 }

@@ -8,30 +8,37 @@ const Cuadrado = () => {
 
 
 
-    const [color, setColor] = useState(true)
+  
+  const colorBlack = {
+    'width': '255px',
+    'height': '255px',
+    'backgroundColor': 'black'
+  }
+  
+  const randomColor = {
+    'width': '255px',
+    'height': '255px',
+    'backgroundColor': `rgb(${red}, ${green}, ${blue})`
+  }
 
-    const colorBlack = {
-      'width': '255px',
-      'height': '255px',
-      'backgroundColor': 'black'
-    }
+  const stopColor = {
+    'width': '255px',
+    'height': '255px',
+    'backgroundColor': 'white'
+  }
 
-    const randomColor = {
-      'width': '255px',
-      'height': '255px',
-      'backgroundColor': `rgb(${red}, ${green}, ${blue})`
-    }
-
+  
+  const [color, setColor] = useState(colorBlack)
 
 
 
 
     return (
         <div
-        onMouseEnter={() => setColor(false)}
-        onMouseOut={() => setColor(true)}
-        onDoubleClick={() => console.log('Double Click')}
-        style={color ? colorBlack : randomColor}>
+        onMouseEnter={() => setColor(randomColor)}
+        onMouseOut={() => setColor(colorBlack)}
+        onDoubleClick={() => setColor(stopColor)}
+        style={color}>
             
         </div>
     );
